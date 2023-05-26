@@ -21,8 +21,6 @@ gen_tunable(webadm_manage_user_files, false)
 ## </desc>
 gen_tunable(webadm_read_user_files, false)
 
-role webadm_r;
-
 userdom_base_user_template(webadm)
 
 type webadm_tmp_t;

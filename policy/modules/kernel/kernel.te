@@ -32,20 +32,24 @@ attribute kernel_system_state_reader;
 attribute sysctl_type;
 
 role system_r;
-role sysadm_r;
-role staff_r;
-role user_r;
 
-# here until order dependence is fixed:
-role unconfined_r;
+require {
+	role sysadm_r;
+	role staff_r;
+	role user_r;
+	
+	# here until order dependence is fixed:
+	role unconfined_r;
+	
+	role guest_r;
+	role xguest_r;
+	
+	ifdef(`enable_mls',`
+		role secadm_r;
+		role auditadm_r;
+		')
+}
 
-role guest_r;
-role xguest_r;
-
-ifdef(`enable_mls',`
-	role secadm_r;
-	role auditadm_r;
-')
 
 #
 # kernel_t is the domain of kernel threads.

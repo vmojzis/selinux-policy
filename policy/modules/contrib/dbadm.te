@@ -21,8 +21,6 @@ gen_tunable(dbadm_manage_user_files, false)
 ## </desc>
 gen_tunable(dbadm_read_user_files, false)
 
-role dbadm_r;
-
 userdom_confined_admin_template(dbadm)
 
 ########################################

@@ -5,8 +5,10 @@ policy_module(auditadm, 2.2.0)
 # Declarations
 #
 
-role auditadm_r;
-role system_r;
+require {
+	role system_r;
+}
+
 userdom_confined_admin_template(auditadm)
 
 ########################################
