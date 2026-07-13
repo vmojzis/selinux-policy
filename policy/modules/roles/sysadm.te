@@ -295,6 +295,10 @@ optional_policy(`
 ')
 
 optional_policy(`
+	fail2ban_admin(sysadm_t, sysadm_r)
+')
+
+optional_policy(`
 	firstboot_run(sysadm_t, sysadm_r)
 ')
 
