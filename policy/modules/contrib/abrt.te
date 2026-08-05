@@ -21,12 +21,12 @@ gen_tunable(abrt_anon_write, false)
 ##	</p>
 ## </desc>
 gen_tunable(abrt_upload_watch_anon_write, true)
-
+        
 ## <desc>
 ##	<p>
-##	Determine whether ABRT can run in
+##	Determine whether ABRT can run in 
 ##	the abrt_handle_event_t domain to
-##	handle ABRT event scripts.
+## 	handle ABRT event scripts.
 ##	</p>
 ## </desc>
 gen_tunable(abrt_handle_event, true)

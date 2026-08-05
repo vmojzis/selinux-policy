@@ -26,8 +26,8 @@ userdom_user_application_domain(bluetooth_helper_t, bluetooth_helper_exec_t)
 role bluetooth_helper_roles types bluetooth_helper_t;
 
 type bluetooth_helper_tmp_t;
-typealias bluetooth_helper_tmp_t alias { user_bluetooth_helper_tmp_t staff_bluetooth_helper_tmp_t sysadm_bluetooth_helper_tmp_t };
-typealias bluetooth_helper_tmp_t alias { auditadm_bluetooth_helper_tmp_t secadm_bluetooth_helper_tmp_t };
+typealias bluetooth_helper_tmp_t alias { user_bluetooth_helper_tmp_t    staff_bluetooth_helper_tmp_t sysadm_bluetooth_helper_tmp_t };
+typealias bluetooth_helper_tmp_t alias { auditadm_bluetooth_helper_tmp_t  secadm_bluetooth_helper_tmp_t };
 userdom_user_tmp_file(bluetooth_helper_tmp_t)
 
 type bluetooth_helper_tmpfs_t;
@@ -130,6 +130,7 @@ dev_read_urand(bluetooth_t)
 dev_rw_input_dev(bluetooth_t)
 dev_rw_wireless(bluetooth_t)
 dev_rw_uhid_dev(bluetooth_t)
+
 
 domain_use_interactive_fds(bluetooth_t)
 domain_dontaudit_search_all_domains_state(bluetooth_t)
